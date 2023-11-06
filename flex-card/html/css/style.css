@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+    overflow: hidden;
+    transition: all 0.5s;
+    font-family: 'Kanit', sans-serif;
+}
+
+#container,
+#picture, #citizenid, #firstname, #lastname, #birthdate, #gender, #nationality, #cardnum, #expiredate, #signature,
+#picture2, #firstname2, #lastname2, #birthdate2, #nationality2, #cardnum2, #expiredate2, #signature2, #succesdate2, #picture22,
+#firstname3, #lastname3, #jobname3, #phone3, #phone3, #email3, #location3, #website3,
+#picture4, #firstname4, #lastname4
+{
+  position: absolute;
+}
+
+#container {
+  width: auto;
+  animation: show_noti_right 0.8s ease forwards;
+  top: 50%;
+  right: 50px;
+}
+
+@keyframes show_noti_right {
+    0% {
+      transform: translateX(100%);
+    }
+    40% {
+      transform: translateX(-5%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+}
+
+/* IDCARD */
+#container-id {
+  display: none;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/idcard.png);
+  width: 487px;
+  height: 216px;
+}
+
+#container-id p {
+  font-size: 0.7em;
+}
+
+#picture {
+  scale: 0.2;
+  top: -130px;
+  left: -200px;
+  opacity: 0.3;
+}
+
+#firstname {
+  top: 27px;
+  left: 10px;
+}
+
+#lastname {
+  top: 45px;
+  left: 10px;
+}
+
+#birthdate {
+  top: 77px;
+  left: 262px;
+}
+
+#gender {
+  top: 77px;
+  left: 127px;
+}
+
+#nationality {
+  top: 77px;
+  left: 179px;
+}
+
+#cardnum {
+  top: 123px;
+  left: 127px;
+}
+
+#citizenid {
+  top: 100px;
+  left: 127px;
+}
+
+#expiredate {
+  top: 147px;
+  left: 127px;
+}
+
+#signature {
+  font-family: 'Zeyada', cursive;
+  top: 126.5px;
+  left: 110px;
+  font-size: 3.2em;
+  opacity: 50%;
+}
+
+/* DRIVE CARD */
+#container-drive {
+  display: none;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/drivecard.png);
+  width: 487px;
+  height: 216px;
+}
+
+#container-tempdrive {
+  display: none;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/drivecard.png);
+  width: 487px;
+  height: 216px;
+}
+
+#container-drive p {
+  font-size: 0.55em;
+}
+
+#picture2 {
+  scale: 0.11;
+  top: -107px;
+  left: -166px;
+  opacity: 0.3;
+}
+
+#picture22 {
+  scale: 0.07;
+  top: -105px;
+  left: -88px;
+  opacity: 0.05;
+}
+
+#firstname2 {
+  top: 30px;
+  left: 130px;
+}
+
+#lastname2 {
+  top: 40.5px;
+  left: 130px;
+}
+
+#birthdate2 {
+  top: 50.7px;
+  left: 130px;
+}
+
+#nationality2 {
+  top: 61px;
+  left: 208px;
+}
+
+#cardnum2 {
+  top: 81.70312119023px;
+  left: 130px;
+}
+
+#succesdate2 {
+  top: 61px;
+  left: 133px;
+}
+
+#expiredate2 {
+  top: 71.703102px;
+  left: 133px;
+}
+
+#signature2 {
+  font-family: 'Zeyada', cursive;
+  top: 76.70312119023px;
+  left: 130px;
+  font-size: 2.5em;
+  opacity: 50%;
+}
+
+/* LAWYER CARD */
+#container-lawyer {
+  display: none;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/lawyercard.png);
+  width: 487px;
+  height: 216px;
+}
+
+#container-lawyer p{
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+	text-transform: uppercase;
+  font-size: 0.61em;
+}
+
+#jobname3{
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+	text-transform: uppercase;
+  font-size: 1.31em;
+  top: 67px;
+  left: 44.7px;
+}
+
+#firstname3 {
+  top: 42px;
+  left: 44.7px;
+}
+
+#firstname3 p{
+  font-size: 0.8em;
+}
+
+#lastname3 {
+  top: 42px;
+  left: 105px;
+}
+
+#lastname3 p{
+  font-size: 0.8em;
+}
+
+#phone3 {
+  top: 92.34099px;
+  left: 58.4px;
+}
+
+#email3 {
+  top: 104.84099px;
+  left: 58.4px;
+}
+
+#location3 {
+  top: 119.34099px;
+  left: 58.4px;
+}
+
+#website3 {
+  top: 133.84099px;
+  left: 58.4px;
+}
+
+/* LAWYER */
+#container-police {
+  display: none;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/police_card.png);
+  width: 487px;
+  height: 216px;
+}
+
+#picture4 {
+  scale: 0.23;
+  top: -147px;
+  left: -195px;
+  opacity: 0.3;
+}
+
+#firstname4 {
+  font-size: 28px;
+  top: -28px;
+  left: 57px;
+}
